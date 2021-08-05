@@ -1,0 +1,27 @@
+{
+    "name": "sethathay/number-to-khmer-words",
+    "description": "A laravel package to convert number to khmer words",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SETHA THAY",
+            "email": "sethathay@gmail.com"
+        }
+    ],
+    "autoload": {
+		"psr-4": {
+		  "SethaThay\\NumberToKhmerWords\\": "src"
+		}
+	},
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SethaThay\\NumberToKhmerWords\\NumberToKhmerWordsServiceProvider"
+            ],
+            "aliases": {
+                "NumberToKhmerWords": "SethaThay\\NumberToKhmerWords\\Facades\\NumberToKhmerWords"
+            }
+        }
+    }
+}
